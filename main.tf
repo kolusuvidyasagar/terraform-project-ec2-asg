@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "ec2_asg" {
-  source = "git::https://github.com/kolusuvidyasagar/terraform-project-ec2-asg-root=main"
+  source = "git::https://github.com/kolusuvidyasagar/terraform-project-ec2-asg-root.git//ec2-asg?ref=main"
 
   project_name       = var.project_name
   ami_id             = var.ami_id
